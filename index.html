@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FIT Login</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f4f6fb;
+height:100vh;
+overflow:hidden;
+}
+
+/* =========================
+   HEADER (SAME AS LOGIN.PHP)
+========================= */
+.top-header{
+background:#0a2a66;
+color:white;
+text-align:center;
+padding:20px;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+z-index:1000;
+}
+
+.top-header img{
+width:60px;
+height:60px;
+border-radius:50%;
+border:2px solid white;
+}
+
+/* =========================
+   CENTER CONTAINER
+========================= */
+.center-box{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+padding-top:100px; /* space for header */
+box-sizing:border-box;
+}
+
+/* =========================
+   LOGIN BOX
+========================= */
+.login-box{
+background:white;
+padding:40px;
+width:320px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.login-box h2{
+margin-bottom:10px;
+color:#0a2a66;
+font-size:24px;
+}
+
+.login-box p{
+font-size:14px;
+color:#555;
+line-height:1.6;
+margin-bottom:20px;
+}
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+.login-btn{
+display:inline-block;
+width:100%;
+padding:12px;
+background:#0a2a66;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.login-btn:hover{
+background:#081f4d;
+transform:translateY(-2px);
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media(max-width:768px){
+
+.login-box{
+width:85%;
+padding:30px;
+}
+
+.top-header h1{
+font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="top-header">
+
+<img src="img/fit.jpeg">
+
+<h1>Faran Institute of Technology (FIT)</h1>
+
+</div>
+
+<!-- CENTER CONTENT -->
+<div class="center-box">
+
+<div class="login-box">
+
+<h2>Welcome</h2>
+
+<p>
+Access your FIT dashboard securely.
+Click below to continue login.
+</p>
+
+<a href="login.php" class="login-btn">
+Login
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
